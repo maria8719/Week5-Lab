@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 export default function Login() {
 
   const [username, setUserName] = useState("");
@@ -9,7 +7,7 @@ export default function Login() {
 
   const handleSubmit = (event)=> {
       event.preventDefault();
-      alert('username: ${username}, password: ${password}');
+      alert(`username: ${username}, password: ${password}`);
   }
   return(
   < form onSubmit={(e)=> handleSubmit(e)}>
