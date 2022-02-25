@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import InputText from './Components/InputText';
+import ListArray from './Components/ListArray';
+import Login from './Components/Login';
+import Image from './Components/Image';
 
 function App() {
+
   return (
+    <div>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputText/>   
+      <ListArray />
+     <Login />
+     <br />
+     <img src= "https://via.placeholder.com/150" />
+    </div>
     </div>
   );
 }
